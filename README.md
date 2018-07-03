@@ -1,4 +1,3 @@
-# stylesheet
 /* 
  * phina.js 0.2.0
  * phina.js is a game library in javascript
