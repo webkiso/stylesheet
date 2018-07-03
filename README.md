@@ -12355,11 +12355,11 @@ phina.namespace(function() {
        
         
         var url = phina.social.Twitter.createURL({
-          text: text,
           
-          url: params.url,
+          
+          
         });
-        window.open(url, 'share window', 'width=480, height=320');
+        
         
       };
     },
