@@ -12353,11 +12353,7 @@ phina.namespace(function() {
 
       this.shareButton.onclick = function() {
        
-        var url = phina.social.Twitter.createURL({
-          text: text,
-          hashtags: params.hashtags,
-          url: params.url,
-        });
+        var url = https://twitter.com/?lang=ja
         
       };
     },
