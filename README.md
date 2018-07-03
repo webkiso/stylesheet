@@ -12207,7 +12207,7 @@ phina.namespace(function() {
             touchLabel: {
               className: 'phina.display.Label',
               arguments: {
-                text: "TOUCH START",
+                text: "クリックで開始",
                 fill: params.fontColor,
                 stroke: false,
                 fontSize: 32,
