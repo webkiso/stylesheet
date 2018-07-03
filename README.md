@@ -12354,11 +12354,7 @@ phina.namespace(function() {
       this.shareButton.onclick = function() {
        
         
-        var url = phina.social.Twitter.createURL({
-          
-          
-          
-        });
+       
         
         
       };
