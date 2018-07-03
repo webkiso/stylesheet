@@ -12358,7 +12358,7 @@ phina.namespace(function() {
           hashtags: params.hashtags,
           url: params.url,
         });
-        window.open(url, 'share window', 'width=480, height=320');
+        
       };
     },
 
