@@ -12352,10 +12352,6 @@ phina.namespace(function() {
       }
 
       this.shareButton.onclick = function() {
-
-        
-       
-        
         
       };
     },
