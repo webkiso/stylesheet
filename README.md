@@ -12352,13 +12352,8 @@ phina.namespace(function() {
       }
 
       this.shareButton.onclick = function() {
-        var text = 'Score: {0}\n{1}'.format(params.score, message);
-        var url = phina.social.Twitter.createURL({
-          text: text,
-          hashtags: params.hashtags,
-          url: params.url,
-        });
-        window.open(url, 'share window', 'width=480, height=320');
+        
+        var url = file:///Users/itouchihiro/Downloads/phinajs/index.html
       };
     },
 
