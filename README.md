@@ -12352,7 +12352,7 @@ phina.namespace(function() {
       }
 
       this.shareButton.onclick = function() {
-        var text = 'Score: {0}\n{1}'.format(params.score, message);
+       
         var url = phina.social.Twitter.createURL({
           text: text,
           hashtags: params.hashtags,
