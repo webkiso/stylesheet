@@ -12308,7 +12308,7 @@ phina.namespace(function() {
           shareButton: {
             className: 'phina.ui.Button',
             arguments: [{
-              text: '⬅︎',
+              text: '★',
               width: 128,
               height: 128,
               fontColor: params.fontColor,
