@@ -12351,9 +12351,7 @@ phina.namespace(function() {
         });
       }
 
-      this.shareButton.onclick = function() {
-        
-      };
+     <input type="shareButton" onclick="location.href='https://www.youtube.com'">
     },
 
     _static: {
