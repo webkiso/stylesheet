@@ -12366,7 +12366,7 @@ phina.namespace(function() {
       defaults: {
         score: 16,
 
-        message: 'this is phina.js project.',
+        message: '６号館裏の坂',
         hashtags: 'phina_js,game,javascript',
         url: phina.global.location && phina.global.location.href,
 
