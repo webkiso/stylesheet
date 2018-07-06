@@ -12207,7 +12207,7 @@ phina.namespace(function() {
             touchLabel: {
               className: 'phina.display.Label',
               arguments: {
-                text: "TOUCH START",
+                text: "12号館前の坂",
                 fill: params.fontColor,
                 stroke: false,
                 fontSize: 32,
