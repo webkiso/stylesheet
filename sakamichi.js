@@ -12299,7 +12299,7 @@ phina.namespace(function() {
               text: message,
               fill: params.fontColor,
               stroke: null,
-              fontSize: 20,
+              fontSize: 15,
             },
             x: this.gridX.center(),
             y: this.gridY.span(9),
