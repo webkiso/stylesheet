@@ -12352,43 +12352,6 @@ phina.namespace(function() {
       }
 
       this.shareButton.onclick = function() {
-        
-        var url = phina.social.Twitter.createURL({
-          text: text,
-          hashtags: params.hashtags,
-          url: params.url,
-        });
-        window.open(url, 'share window', 'width=480, height=320');
-      };
-    },
-
-    _static: {
-      defaults: {
-        score: 16,
-
-        message: '６号館裏の坂',
-        hashtags: 'phina_js,game,javascript',
-        url: phina.global.location && phina.global.location.href,
-
-        width: 640,
-        height: 960,
-
-        fontColor: 'white',
-        backgroundColor: 'hsl(200, 80%, 64%)',
-        backgroundImage: '',
-      },
-    },
-
-  });
-  phina.define('ResultScene', {
-  // デフォルトの ResultScene を上書き
-  superClass: 'ResultScene',
-  
-  init: function() {
-    this.superInit();
-    
-    // デフォルトの処理(Twitter シェア)を上書きする
-    this.shareButton.onclick = function() {
       // 特定の URL を開く
       window.open('https://phiary.me');
     };
@@ -12410,6 +12373,25 @@ phina.namespace(function() {
     };
   },
 })
+    _static: {
+      defaults: {
+        score: 16,
+
+        message: '６号館裏の坂',
+        hashtags: 'phina_js,game,javascript',
+        url: phina.global.location && phina.global.location.href,
+
+        width: 640,
+        height: 960,
+
+        fontColor: 'white',
+        backgroundColor: 'hsl(200, 80%, 64%)',
+        backgroundImage: '',
+      },
+    },
+
+  });
+ 
 
 });
 
