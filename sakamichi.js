@@ -12362,7 +12362,7 @@ phina.namespace(function() {
       defaults: {
         score: 16,
 
-        message: '緩やかに見えて、上りのチャリは地味にきつい。',
+        message: '上りのチャリは地味にきつい。',
         hashtags: 'phina_js,game,javascript',
         url: phina.global.location && phina.global.location.href,
 
