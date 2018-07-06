@@ -12254,14 +12254,12 @@ phina.namespace(function() {
    * @class phina.game.ResultScene
    *
    */
-  phina.define('phina.game.ResultScene', {
-    superClass: 'phina.display.DisplayScene',
-    /**
-     * @constructor
-     */
-    init: function(params) {
-      this.superInit(params);
-
+  phina.define('ResultScene', {
+  // デフォルトの ResultScene を上書き
+  superClass: 'ResultScene',
+  
+  init: function() {
+    this.superInit();
       params = ({}).$safe(params, phina.game.ResultScene.defaults);
 
       var message = params.message.format(params);
