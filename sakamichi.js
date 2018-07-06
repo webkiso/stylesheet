@@ -12263,48 +12263,11 @@ phina.namespace(function() {
     init: function() {
     this.superInit();
 
-      params = ({}).$safe(params, phina.game.ResultScene.defaults);
-
-      var message = params.message.format(params);
-
-      this.backgroundColor = params.backgroundColor;
-
+     
       this.fromJSON({
         children: {
-          scoreText: {
-            className: 'phina.display.Label',
-            arguments: {
-              text: 'score',
-              fill: params.fontColor,
-              stroke: null,
-              fontSize: 48,
-            },
-            x: this.gridX.span(8),
-            y: this.gridY.span(4),
-          },
-          scoreLabel: {
-            className: 'phina.display.Label',
-            arguments: {
-              text: params.score+'',
-              fill: params.fontColor,
-              stroke: null,
-              fontSize: 72,
-            },
-            x: this.gridX.span(8),
-            y: this.gridY.span(6),
-          },
-
-          messageLabel: {
-            className: 'phina.display.Label',
-            arguments: {
-              text: message,
-              fill: params.fontColor,
-              stroke: null,
-              fontSize: 32,
-            },
-            x: this.gridX.center(),
-            y: this.gridY.span(9),
-          },
+          
+       
 
           shareButton: {
             className: 'phina.ui.Button',
@@ -12346,11 +12309,7 @@ phina.namespace(function() {
         }
       });
 
-      if (params.exitType === 'touch') {
-        this.on('pointend', function() {
-          this.exit();
-        });
-      }
+     
 
      // デフォルトの処理(Twitter シェア)を上書きする
     this.shareButton.onclick = function() {
@@ -12359,22 +12318,7 @@ phina.namespace(function() {
     };
     },
 
-    _static: {
-      defaults: {
-        score: 16,
-
-        message: 'this is phina.js project.',
-        hashtags: 'phina_js,game,javascript',
-        url: phina.global.location && phina.global.location.href,
-
-        width: 640,
-        height: 960,
-
-        fontColor: 'white',
-        backgroundColor: 'hsl(200, 80%, 64%)',
-        backgroundImage: '',
-      },
-    },
+   
 
   });
 
