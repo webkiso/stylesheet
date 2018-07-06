@@ -12257,9 +12257,12 @@ phina.namespace(function() {
   phina.define('ResultScene', {
   // デフォルトの ResultScene を上書き
   superClass: 'ResultScene',
-  
-  init: function() {
+    /**
+     * @constructor
+     */
+    init: function() {
     this.superInit();
+
       params = ({}).$safe(params, phina.game.ResultScene.defaults);
 
       var message = params.message.format(params);
@@ -12306,7 +12309,7 @@ phina.namespace(function() {
           shareButton: {
             className: 'phina.ui.Button',
             arguments: [{
-              text: '⬅︎',
+              text: '★',
               width: 128,
               height: 128,
               fontColor: params.fontColor,
@@ -12349,17 +12352,18 @@ phina.namespace(function() {
         });
       }
 
-      this.shareButton.onclick = function() {
+     // デフォルトの処理(Twitter シェア)を上書きする
+    this.shareButton.onclick = function() {
       // 特定の URL を開く
       window.open('https://phiary.me');
     };
-    
-   
+    },
+
     _static: {
       defaults: {
         score: 16,
 
-        message: '６号館裏の坂',
+        message: 'this is phina.js project.',
         hashtags: 'phina_js,game,javascript',
         url: phina.global.location && phina.global.location.href,
 
@@ -12373,7 +12377,6 @@ phina.namespace(function() {
     },
 
   });
- 
 
 });
 
