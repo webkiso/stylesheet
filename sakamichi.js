@@ -12190,7 +12190,7 @@ phina.namespace(function() {
           titleLabel: {
             className: 'phina.display.Label',
             arguments: {
-              text: params.title,
+              text: "＠12号館前",
               fill: params.fontColor,
               stroke: false,
               fontSize: 64,
@@ -12207,7 +12207,7 @@ phina.namespace(function() {
             touchLabel: {
               className: 'phina.display.Label',
               arguments: {
-                text: "12号館前の坂",
+                text: "TOUCH START",
                 fill: params.fontColor,
                 stroke: false,
                 fontSize: 32,
