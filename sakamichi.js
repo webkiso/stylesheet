@@ -12354,7 +12354,7 @@ phina.namespace(function() {
      // デフォルトの処理(Twitter シェア)を上書きする
     this.shareButton.onclick = function() {
       // 特定の URL を開く
-      window.open('file:///Users/itouchihiro/Desktop/web_yugi/startmap/index.html');
+      window.open('.../index.html');
     };
     },
 
