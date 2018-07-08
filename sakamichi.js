@@ -12363,7 +12363,7 @@ phina.namespace(function() {
       defaults: {
         score: 16,
 
-        message: '上りのチャリは地味にきつい。',
+        message: '上りのチャリって地味にきつい。',
         hashtags: 'phina_js,game,javascript',
         url: phina.global.location && phina.global.location.href,
 
