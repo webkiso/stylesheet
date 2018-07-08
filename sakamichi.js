@@ -12229,7 +12229,7 @@ phina.namespace(function() {
         title: 'phina.js games',
         message: '',
         width: 640,
-        height: 960,
+        height: 850,
 
         fontColor: 'white',
         backgroundColor: 'hsl(200, 80%, 64%)',
